@@ -7,7 +7,9 @@
   box-shadow: 0.5rem 0.5rem 2rem lightgray;
   width: calc((100vw - (18rem)) / 3);
   img {
-    width: 100%;
+    width: calc((100vw - (18rem)) / 3);
+    height: calc((100vw - (18rem)) / 3);
+    object-fit: cover;
     border-radius: 0.5rem;
   }
   button {
