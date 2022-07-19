@@ -1,1 +1,16 @@
-<p>face-snap works!</p>
+<div class="face-snap-card">
+  <img [src]="imageUrl" [alt]="title" />
+  <h1>{{ title }}</h1>
+  <h4>{{ description }}</h4>
+  <p>
+    <button (click)="onSnap()">{{ snapButton }}</button>
+    {{ snaps }}
+  </p>
+  <p ngClass="created-date">
+    <em
+      >Mis en ligne le {{ createdDate.getDate() }}.{{
+        createdDate.getMonth()
+      }}.{{ createdDate.getFullYear() }}</em
+    >
+  </p>
+</div>
