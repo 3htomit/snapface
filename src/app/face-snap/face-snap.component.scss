@@ -1,0 +1,28 @@
+.face-snap-card {
+  position: relative;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 2rem lightgray;
+  width: calc((100vw - (18rem)) / 3);
+  img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  button {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    &:hover {
+      background-color: lightblue;
+      border-radius: 1rem;
+    }
+  }
+  .created-date {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    color: grey;
+  }
+}
