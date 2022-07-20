@@ -1,11 +1,5 @@
 <div class="face-snap-card">
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
-  <h1>{{ faceSnap.title }}</h1>
-  <h4>{{ faceSnap.description }}</h4>
-  <p>
-    <button (click)="onSnap()">{{ snapButton }}</button>
-    {{ faceSnap.snaps }}
-  </p>
   <p ngClass="created-date">
     <em
       >Mis en ligne le {{ faceSnap.createdDate.getDate() }}.{{
@@ -13,4 +7,12 @@
       }}.{{ faceSnap.createdDate.getFullYear() }}</em
     >
   </p>
+  <div class="face-snap-main">
+    <h1>{{ faceSnap.title }}</h1>
+    <p>
+      <button (click)="onSnap()">{{ snapButton }}</button>
+      {{ faceSnap.snaps }}
+    </p>
+  </div>
+  <p>{{ faceSnap.description }}</p>
 </div>
