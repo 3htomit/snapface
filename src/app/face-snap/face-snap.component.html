@@ -1,6 +1,6 @@
 <div class="face-snap-card">
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
-  <p ngClass="created-date">
+  <p class="created-date">
     <em
       >Mis en ligne le {{ faceSnap.createdDate.getDate() }}.{{
         faceSnap.createdDate.getMonth()
@@ -10,10 +10,14 @@
   <div class="face-snap-main">
     <h1>{{ faceSnap.title }}</h1>
     <p>
-      <button (click)="onSnap()">{{ snapButton }}</button>
-      {{ faceSnap.snaps }}
+      <span [ngStyle]="{ color: 'rgb(0,' + faceSnap.snaps + ',0)' }">{{
+        faceSnap.snaps
+      }}</span>
+      <button [ngClass]="{ snapped: snapped }" (click)="onSnap()">👍</button>
     </p>
   </div>
   <p>{{ faceSnap.description }}</p>
   <p *ngIf="faceSnap.location">{{ faceSnap.location }}</p>
 </div>
+
+<div [ngClass]="{ 'class-name': condition }"></div>

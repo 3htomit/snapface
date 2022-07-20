@@ -19,13 +19,16 @@
     display: flex;
     justify-content: space-between;
     margin: 0.5rem 0;
+    .snapped {
+      background-color: lightcoral;
+    }
     button {
       border: none;
       background: none;
       font-size: 1.5rem;
+      border-radius: 1rem;
       &:hover {
         background-color: lightblue;
-        border-radius: 1rem;
       }
     }
   }
