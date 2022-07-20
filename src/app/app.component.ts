@@ -12,26 +12,28 @@ export class AppComponent implements OnInit {
   thirdSnap!: FaceSnap;
 
   ngOnInit() {
-    this.firstSnap = new FaceSnap(
-      'https://images.unsplash.com/photo-1564499504739-bc4fc2ae8cba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2833&q=80',
-      'Kitesurf',
-      'Mon sport préféré',
-      6,
-      new Date()
-    );
-    this.secondSnap = new FaceSnap(
-      'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
-      'Mountains',
-      'Mon lieu favoris',
-      8,
-      new Date()
-    );
-    this.thirdSnap = new FaceSnap(
-      'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80',
-      'Photography',
-      'Mon activité préférée',
-      2,
-      new Date()
-    );
+    this.firstSnap = {
+      imageUrl: 'https://images.unsplash.com/photo-1564499504739-bc4fc2ae8cba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2833&q=80',
+      title: 'Kitesurf',
+      description: 'Mon sport préféré',
+      snaps: 6,
+      createdDate: new Date(),
+      location: "Sardaigne"
+    };
+    this.secondSnap = {
+      imageUrl: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+      title: 'Mountains',
+      description: 'Mon lieu favoris',
+      snaps: 8,
+      createdDate: new Date(),
+      location: "Alpes Françaises"
+    };
+    this.thirdSnap = {
+      imageUrl: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80',
+      title: 'Photography',
+      description: 'Mon activité préférée',
+      snaps: 2,
+      createdDate: new Date()
+    };
   }
 }
