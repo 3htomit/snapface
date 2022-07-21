@@ -1,14 +1,13 @@
 <div class="face-snap-card">
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
   <p class="created-date">
-    <em
-      >Mis en ligne le {{ faceSnap.createdDate.getDate() }}.{{
-        faceSnap.createdDate.getMonth()
-      }}.{{ faceSnap.createdDate.getFullYear() }}</em
-    >
+    <em>
+      Mis en ligne
+      {{ faceSnap.createdDate | date: "EEEE dd.MM.yyyy à HH:mm" }}
+    </em>
   </p>
   <div class="face-snap-main">
-    <h1>{{ faceSnap.title }}</h1>
+    <h1>{{ faceSnap.title | titlecase }}</h1>
     <p>
       <span [ngStyle]="{ color: 'rgb(0,' + faceSnap.snaps + ',0)' }">{{
         faceSnap.snaps
