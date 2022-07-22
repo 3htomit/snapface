@@ -1,0 +1,21 @@
+.home {
+  text-align: center;
+  h2 {
+    margin: 2rem;
+  }
+  p {
+    margin: 1.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    font-weight: 500;
+    background-color: coral;
+    &:hover {
+      background: linear-gradient(rgba(175, 0, 0, 0.1), rgba(175, 0, 0, 0.1)),
+        coral;
+    }
+  }
+}
