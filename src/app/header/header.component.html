@@ -1,5 +1,14 @@
 <header>
-  <a href="">
+  <a routerLink="">
     <h1>SnapFace</h1>
   </a>
+  <nav>
+    <a
+      routerLink=""
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Accueil</a
+    >
+    <a routerLink="facesnaps" routerLinkActive="active">FaceSnaps</a>
+  </nav>
 </header>
