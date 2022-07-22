@@ -1,6 +1,9 @@
-<div class="face-snap-cards">
-  <app-face-snap
-    *ngFor="let eachFaceSnap of faceSnaps"
-    [faceSnap]="eachFaceSnap"
-  ></app-face-snap>
+<div class="face-snap-list">
+  <a href="">Accueil</a>
+  <div class="face-snap-cards">
+    <app-face-snap
+      *ngFor="let eachFaceSnap of faceSnaps"
+      [faceSnap]="eachFaceSnap"
+    ></app-face-snap>
+  </div>
 </div>
