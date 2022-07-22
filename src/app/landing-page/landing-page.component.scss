@@ -6,13 +6,18 @@
   p {
     margin: 1.5rem;
   }
-  a {
+  a,
+  button {
+    margin: 0 1rem;
+    border: none;
     text-decoration: none;
     color: white;
     border-radius: 1rem;
     padding: 1rem 3rem;
     font-weight: 500;
+    font-size: 1rem;
     background-color: coral;
+    cursor: pointer;
     &:hover {
       background: linear-gradient(rgba(175, 0, 0, 0.1), rgba(175, 0, 0, 0.1)),
         coral;
