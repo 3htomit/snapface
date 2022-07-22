@@ -1,13 +1,13 @@
 .face-snap-card {
-  margin: 2rem;
+  margin: 2vw;
   padding: 1rem;
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0.5rem 0.5rem 2rem lightgray;
-  width: calc((100vw - (18rem)) / 3);
+  box-shadow: 0.5rem 0.5rem 2rem rgba($color: #000000, $alpha: 0.1);
+  width: calc((88vw - (8rem)) / 3);
   img {
-    width: calc((100vw - (18rem)) / 3);
-    height: calc((100vw - (18rem)) / 3);
+    width: calc((88vw - (8rem)) / 3);
+    height: calc((88vw - (8rem)) / 3);
     object-fit: cover;
     border-radius: 0.5rem;
   }
