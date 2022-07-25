@@ -1,0 +1,38 @@
+.face-snap-card {
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 2rem rgba($color: #000000, $alpha: 0.1);
+  display: flex;
+  width: calc((100vh - 70px - 6rem) + 17rem);
+  img {
+    width: calc(100vh - 70px - 6rem);
+    height: calc(100vh - 70px - 6rem);
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+  }
+  .created-date {
+    color: grey;
+    text-align: right;
+    font-size: smaller;
+  }
+  .face-snap-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    .snapped {
+      background-color: lightcoral;
+    }
+    button {
+      border: none;
+      background: none;
+      font-size: 1.5rem;
+      border-radius: 1rem;
+      &:hover {
+        background-color: lightblue;
+      }
+    }
+  }
+}
