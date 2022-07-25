@@ -1,36 +1,31 @@
-.face-snap-card {
-  margin: 2vw;
-  padding: 1rem;
-  background-color: white;
-  border-radius: 1rem;
-  box-shadow: 0.5rem 0.5rem 2rem rgba($color: #000000, $alpha: 0.1);
-  width: calc((88vw - (8rem)) / 3);
-  img {
-    width: calc((88vw - (8rem)) / 3);
-    height: calc((88vw - (8rem)) / 3);
-    object-fit: cover;
-    border-radius: 0.5rem;
-  }
-  .created-date {
-    color: grey;
-    text-align: right;
-    font-size: smaller;
-  }
-  .face-snap-main {
-    display: flex;
-    justify-content: space-between;
-    margin: 0.5rem 0;
-    .snapped {
-      background-color: lightcoral;
+a {
+  text-decoration: none;
+  color: black;
+  .face-snap-card {
+    margin: 1vw;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 2rem rgba($color: #000000, $alpha: 0.1);
+    width: calc((88vw - (4rem)) / 3);
+    &:hover {
+      background-color: rgb(255, 187, 162);
     }
-    button {
-      border: none;
-      background: none;
-      font-size: 1.5rem;
-      border-radius: 1rem;
-      &:hover {
-        background-color: lightblue;
-      }
+    h2 {
+      margin: 0;
+      font-family: "Indie Flower", cursive;
+    }
+    img {
+      width: calc((88vw - (4rem)) / 3);
+      height: calc((88vw - (4rem)) / 3);
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+    .face-snap-main {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0.5rem 0;
     }
   }
 }
