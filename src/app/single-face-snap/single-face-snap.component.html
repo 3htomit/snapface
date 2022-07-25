@@ -1,0 +1,22 @@
+<div class="face-snap-card">
+  <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
+  <div class="face-snap-details">
+    <p class="created-date">
+      <em>
+        Mis en ligne
+        {{ faceSnap.createdDate | date: "EEEE dd.MM.yyyy à HH:mm" }}
+      </em>
+    </p>
+    <div class="face-snap-main">
+      <h1>{{ faceSnap.title | titlecase }}</h1>
+      <p>
+        <span [ngStyle]="{ color: 'rgb(0,' + faceSnap.snaps + ',0)' }">{{
+          faceSnap.snaps
+        }}</span>
+        <button [ngClass]="{ snapped: snapped }" (click)="onSnap()">👍</button>
+      </p>
+    </div>
+    <p>{{ faceSnap.description }}</p>
+    <p *ngIf="faceSnap.location">{{ faceSnap.location }}</p>
+  </div>
+</div>
